@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2 align="center">Student Registration Form</h2>
+    <form align="center">
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text"  placeholder="Enter your full name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" placeholder="Enter valid email address"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password"  placeholder="Enter password"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male"> 
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female"> 
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other"> 
+        <label for="other">Other</label><br><br>
+
+        <label for="course">Course:</label><br>
+        <select id="course" name="course">
+            <option>-- Select Course --</option>
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>BBA</option>
+            <option>MCA</option>
+            <option>MBA</option>
+        </select><br><br>
+
+        <label for="contact">Contact No:</label><br>
+        <input type="tel"  placeholder="Enter phone number"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your address"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <hr>
+    <p style="text-align: center;">© 2025 Student Registration Portal</p>
+</body>
+</html>
