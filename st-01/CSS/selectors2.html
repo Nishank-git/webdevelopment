@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css selectors</title>
+    <style>
+     
+        /*
+        #inside p{
+            background-color: green;
+        }
+        #main + p{
+            background-color: blueviolet;
+        }
+        #main > p{
+            background-color: yellow;
+        }
+        #main ~ p{
+            background-color: red;
+        }
+        /* special css styling links
+        a{
+            color: pink;
+        }
+
+        a:link{
+            text-decoration:none; font-size: 40px;
+        }
+        a:hover{
+            color: orange; font-size: 25px;
+        }
+        a:active{
+            color:aqua; font-size: 25px;
+        } */
+      
+        #main .odd{
+            color: red;
+        }
+        
+        #main p:nth-child(even)
+        {
+    color: blue;}
+
+/* style a specific part of a paragraph */
+#main p::first-letter{
+    color :orange;
+}
+#main p::after{
+    content: "read more";
+    color: pink;
+    font-size: 40px;
+}
+    </style>
+</head>
+<body><!-- CSS combinator-->
+<div id="main"><!--div first start-->
+    <p class="odd">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem vel autem? Sapiente itaque, velit id fugit sit deserunt possimus ea. Ad ipsam et velit soluta culpa dolorum maxime repudiandae.
+</p>
+<p class="odd">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam alias, dicta error fugit eveniet sed illum deleniti aliquid nobis expedita possimus hic rem magni assumenda repellendus quasi delectus cupiditate atque!
+</p>
+<P class="even">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id accusamus ab quisquam adipisci fugiat delectus omnis autem praesentium aut molestias excepturi, inventore dignissimos provident maxime nobis quae ducimus consequuntur.
+</P>
+<p class = "odd">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptates iste quisquam assumenda illo rerum totam dolores cumque reprehenderit consequuntur, deserunt iure animi dolore, obcaecati quia! Doloribus ab fuga animi?
+</p>
+<p class ="even">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, molestias nemo. Labore nemo, voluptates temporibus assumenda libero reprehenderit. Beatae, iste esse libero saepe voluptate eveniet ex dolor repellat neque eius.
+</p>
+</div>
+
+<div id="inside">
+    <p>
+   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos qui libero commodi at repudiandae, enim nisi nulla temporibus asperiores a doloribus vero, natus amet atque corporis hic placeat porro! Ullam.
+    </p>
+    </div>
+
+ </div><!--div first end-->
+ <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sed numquam reprehenderit velit doloribus sequi enim fugit eligendi corrupti? Culpa alias id qui ipsum veritatis non libero nulla placeat illo?
+ </p>
+ <a href=""> visit my page</a>
+ <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error laboriosam ipsa quasi, assumenda doloribus ullam cumque similique beatae laudantium est, corrupti minus inventore excepturi neque modi aspernatur distinctio eum expedita.
+
+ </p>
+
+    
+</body>
+</html>
